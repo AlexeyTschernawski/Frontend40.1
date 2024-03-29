@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Форма для ввода текста (Text Input Form): -->
+    <form action="/submit" method="get">
+        <label for="username">Имя пользователя:</label>
+        <input type="text" id="username" name="username">
+        <input type="submit" value="Отправить">
+    </form>
+
+Предназначение: Данная форма позволяет пользователю ввести текстовые данные, 
+такие как имя пользователя, адрес электронной почты и т. д.
+Функционал: Пользователь может ввести текст в поле ввода input, 
+и после отправки формы, данные будут отправлены на сервер 
+по указанному в атрибуте action адресу.
+<br><br><br>
+
+    <!--Форма для ввода пароля (Password Input Form):-->
+    <form action="/login" method="post">
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password">
+        <input type="submit" value="Войти">
+      </form>
+      Предназначение: Эта форма аналогична текстовому полю, 
+      но скрывает вводимый текст.
+      Функционал: Пользователь вводит пароль в поле ввода input типа password. 
+      Содержимое этого поля скрыто, и по умолчанию отображаются 
+      символы-заменители. После отправки формы данные пароля будут отправлены на сервер.
+<br><br><br>
+    
+<form method="get">
+    <!-- Текстовое поле  с атрибутами-->
+    <input type="text" name="lastName1" value="hello" disabled>
+
+    <br>
+    <br>
+    <!-- Текстовое поле  с атрибутами 2-->
+    <input type="text" name="lastName2" required placeholder="введите имя" maxlength="5">
+    <br>
+    <br>
+    <!-- лейбл вариант 1 (обертка) -->
+    <label>
+        Введите имя
+        <input type="text" name="lastName3">
+    </label>
+    <br>
+    <br>
+
+    <!-- лейбл вариант 2 через for -->
+    <label for="lastName4">Введите имя 2</label>
+    <input type="text" name="lastName4" id="lastName4">
+
+    <br>
+    <!-- пароль, email, числа, цвет, дата -->
+    <input type="password" name="lastName5">
+    <br>
+    <br>
+    <input type="email" name="lastName6">
+    <br>
+    <br>
+    <input type="number" name="lastName6">
+    <br>
+    <br>
+    <input type="color" name="lastName6">
+    <br>
+    <br>
+    <input type="date" name="lastName6">
+
+    <br>
+    <br>
+    <!-- text area -->
+    <textarea name="info" cols="30" rows="10" maxlength="5"
+        placeholder="Введите информацию , макс длина 5 символов"></textarea>
+
+    <br>
+    <br>
+
+    <!-- select - выпадающий список -->
+    Выбирите город:
+    <select name="city" multiple>
+        <option value="Minsk">Минск</option>
+        <option value="Almaty" selected>Алматы</option>
+        <option value="Astana">St.Petersburg</option>
+        <option value="Astana">Tampa</option>
+        <option value="Astana">Munic</option>
+        <option value="Astana">Berlin</option>
+    </select>
+    <br>
+    <br>
+
+    Выбирите город menu2:
+    <select name="city">
+        <option value="Minsk">Минск</option>
+        <option value="Astana">St.Petersburg</option>
+        <option value="Astana">Tampa</option>
+        <option value="Astana">Munic</option>
+        <option value="Astana">Berlin</option>
+    </select>
+    <br><br>
+    <!-- Радиокнопки -->
+    <label>
+        да
+        <input type="radio" name="yes_no" value="yes">
+    </label>
+    <label>
+        нет
+        <input type="radio" name="yes_no" value="no" checked>
+    </label>
+    <label>
+        может быть
+        <input type="radio" name="yes_no" value="maybe">
+    </label>
+
+    <br>
+    <br>
+    <!-- чекбокс -->
+    Дополнительно:
+    <br>
+    <label>
+        Завтрак
+        <input type="checkbox" name="breakfast" value="true">
+    </label>
+    <label>
+        Обед
+        <input type="checkbox" name="lunch" value="true">
+    </label>
+    <label>
+        Ужин
+        <input type="checkbox" name="diner" value="true">
+    </label>
+
+
+
+    <br>
+    <br>
+    <!-- <input type="submit"> -->
+    <input type="reset" value="Очистить">
+    <button type="submit">Отправить111</button>
+
+</form>
+
+
+
+
+
+</body>
+
+</html>
