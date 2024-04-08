@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    z-index: 999;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 120px; /* Учитываем высоту заголовка */
+}
+
+.card {
+    width: 400px;
+    height: 550px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 50px;
+    transition: transform 1.5s ease, background-color 1.5s ease; /* добавим плавное переходное свойство */
+    
+}
+
+.card:nth-child(1) {
+    border: 2px solid #ff6347; /* Граница красного цвета */
+    background-color: aquamarine;
+}
+
+.card:nth-child(2) {
+    border: 2px solid #4682b4; /* Граница синего цвета */
+    background-color: #4682b4;
+}
+
+.card:nth-child(3) {
+    border: 2px solid #32cd32; /* Граница зеленого цвета */
+    background-color: antiquewhite;
+}
+
+.card:hover {
+    background-color: #aef19e; /* изменение цвета фона при наведении */
+    transform: scale(1.05); /* немного увеличиваем карточку при наведении */
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease; /* добавим плавное переходное свойство */
+}
+
+.card:hover img {
+    transform: scale(1.1); /* увеличиваем изображение при наведении */
+}
+
+.info {
+    padding: 2px;
+    text-align: center;
+}
+
+.info h2 {
+    margin-top: 0;
+}
+
+.info p {
+    margin: 4px 0;
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Карточки будут располагаться одна под другой */
+        align-items: center; /* Выравнивание по центру */
+    }
+
+    .card {
+        width: calc(100% - 40px); /* Ширина карточки будет равна ширине экрана минус отступы по 20px с каждой стороны */
+        margin-bottom: 20px;
+    }
+}
