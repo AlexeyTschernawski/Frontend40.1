@@ -41,6 +41,9 @@ a {
     justify-content: space-between;
     align-items: center;
     height: 200px;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 
@@ -50,12 +53,19 @@ a {
     width: 24px;
 }
 
+.navilinks{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
 .background{
     width: 100;
 }
 .background img{
     overflow: hidden;
-    width: 100%;
+   
 }
 
 .content-wrapper {
