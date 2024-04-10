@@ -53,7 +53,7 @@ arrayNumbersForReserv.reverse();
 let outputDiv = document.getElementById("output");
 
 arrayNumbersForReserv.forEach(arrayRevers=> {
-    outputDiv.innerHTML += number + "<br>";
+    outputDiv.innerHTML += arrayRevers + "<br>";
 });
 
 

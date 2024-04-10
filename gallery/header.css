@@ -1,0 +1,72 @@
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(247, 5, 5, 0.3);
+}
+
+
+.header {
+    position: relative;
+    display: flex;
+    background-color: rgb(44, 44, 43);
+    height: 350px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.namelevel{
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+}
+.headtext{
+    font-size: 40px;
+}
+.namelevel img{
+    overflow: hidden;
+    height: 40px;
+}
+
+.navi{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.links{
+    word-spacing: 20px; /* Увеличить расстояние между буквами */
+    
+}
+
+.naviicon{
+
+}
+
+.naviicon img{
+    margin-right: 10px;
+    overflow: hidden;
+    height: 20px;
+    width: 23px;
+}
+
+.navilinks{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.background{
+    background: url("./img//backgoundheader.png") center/cover no-repeat;
+}
+.background img{
+    width: 100%;
+    max-width: 100%; /* Установка максимальной ширины */
+    height: auto;
+   
+}
