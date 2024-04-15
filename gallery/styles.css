@@ -30,6 +30,7 @@
 
         .description {
             background-color: rgba(0, 0, 0, 0.5);
+            font-family: Arial, Helvetica, sans-serif;
             color: #fff;
             position: absolute;
             top: 10%;
@@ -110,4 +111,8 @@
         .modal-content img {
             max-width: 100%;
             height: auto;
+        }
+
+        .pagination{
+            
         }
