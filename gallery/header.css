@@ -1,9 +1,17 @@
 a {
     text-decoration: none;
-    color: #ffffff;
+    color: #928f8f;
     font-size: 20px;
     text-align: center;
-    text-shadow: 0 1px 3px rgba(247, 5, 5, 0.3);
+    text-shadow: 0 1px 3px rgba(8, 8, 8, 0.3);
+}
+.pagination{
+    text-decoration: none;
+    color: #0e0d0d;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(105, 28, 28, 0.3);
 }
 
 
@@ -30,6 +38,11 @@ a {
 }
 
 .navi{
+    text-decoration: none;
+    color: #a39e9e;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(8, 8, 8, 0.3);
     display: flex;
     justify-content: space-between;
     align-items: center;

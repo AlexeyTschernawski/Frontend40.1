@@ -112,7 +112,10 @@
             max-width: 100%;
             height: auto;
         }
+        .current-page {
+            color: rgb(192, 76, 9); /* Change to your desired color */
+        }
 
-        .pagination{
-            
+        .totalPages{
+            color: black;
         }

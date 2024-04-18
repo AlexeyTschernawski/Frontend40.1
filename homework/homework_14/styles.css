@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    background-image: url('./img/zhiguli.jpg'); /* Путь к вашей картинке */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Сделать контейнер по высоте всего окна браузера */
+    margin: 0;
+}
+
+#spaceshipInfo {
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+#spaceshipInfo p {
+    margin: 0;
+    padding: 5px 0;
+}
+
+button {
+    background-color: #f80303; /* Зеленый цвет */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: #45a049; /* Темнее зеленый цвет при наведении */
+}
