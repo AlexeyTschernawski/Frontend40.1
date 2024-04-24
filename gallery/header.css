@@ -1,10 +1,4 @@
-a {
-    text-decoration: none;
-    color: #928f8f;
-    font-size: 20px;
-    text-align: center;
-    text-shadow: 0 1px 3px rgba(8, 8, 8, 0.3);
-}
+
 .pagination{
     text-decoration: none;
     color: #0e0d0d;
@@ -16,21 +10,28 @@ a {
 
 
 .header {
+    background: url(./img//ausstellungBackgroundDark.png);
+    background-size: cover; /* Растягиваем изображение, чтобы оно полностью покрывало фон */
+    background-position: center; /* Выравниваем изображение по центру */
     position: relative;
     display: flex;
     background-color: rgb(44, 44, 43);
-    height: 350px;
+    height: 150px;
     align-items: center;
     flex-direction: column;
 }
+
+
+
 
 .namelevel{
     display: flex;
     justify-content: space-between;
     height: 200px;
+    
 }
 .headtext{
-    font-size: 40px;
+    font-size: 50px;
 }
 .namelevel img{
     overflow: hidden;
@@ -51,14 +52,20 @@ a {
     padding-left: 50px;
     padding-right: 50px;
 }
+
+.navi .links a {
+    text-decoration: none;
+    color: #a79a9a;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(8, 8, 8, 0.3);
+}
+
 .links{
     word-spacing: 20px; /* Увеличить расстояние между буквами */
     
 }
 
-.naviicon{
-
-}
 
 .naviicon img{
     margin-right: 10px;
@@ -75,11 +82,9 @@ a {
 
 
 .background{
-    background: url("./img//backgoundheader.png") center/cover no-repeat;
-}
-.background img{
-    width: 100%;
-    max-width: 100%; /* Установка максимальной ширины */
-    height: auto;
-   
+
+    background-size: cover; /* Растягиваем изображение, чтобы оно полностью покрывало фон */
+    background-position: center; /* Выравниваем изображение по центру */
+    width: 100%; /* Ширина элемента, чтобы фон был виден на всю ширину страницы */
+    height: 250px; /* Высота элемента, здесь укажите нужную высоту */
 }
