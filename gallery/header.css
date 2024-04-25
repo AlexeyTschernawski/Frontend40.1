@@ -16,7 +16,7 @@
     position: relative;
     display: flex;
     background-color: rgb(44, 44, 43);
-    height: 150px;
+    height: 250px;
     align-items: center;
     flex-direction: column;
 }
@@ -55,7 +55,7 @@
 
 .navi .links a {
     text-decoration: none;
-    color: #a79a9a;
+    color: #d4bdbd;
     font-size: 20px;
     text-align: center;
     text-shadow: 0 1px 3px rgba(8, 8, 8, 0.3);
@@ -82,7 +82,7 @@
 
 
 .background{
-
+    background-image: url('./img//bildBackground.png');
     background-size: cover; /* Растягиваем изображение, чтобы оно полностью покрывало фон */
     background-position: center; /* Выравниваем изображение по центру */
     width: 100%; /* Ширина элемента, чтобы фон был виден на всю ширину страницы */

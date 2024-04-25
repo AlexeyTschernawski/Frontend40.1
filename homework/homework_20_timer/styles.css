@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom, #87CEEB, #1E90FF);
+}
+
+.timer {
+    position: relative; /
+    animation: shake 0.5s ease-out; 
+    font-size: 100px;
+    border: 10px solid #3f3a3a;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0 0 100px rgba(500, 0, 0, 200); 
+    background-color: rgba(185, 237, 164, 0.8); 
+    backdrop-filter: blur(50px); 
+    
+    position: relative; 
+}
+
+.timer-display {
+    color: #dd1414;
+    font-family:'Times New Roman', Times, serif
+}
+
+.timer-display::before {
+    content: attr(data-content); 
+    position: absolute;
+    bottom: 1;
+    color: #d29847; 
+    opacity: 0.5;
+    transform: scaleY(+);
+}
+
+@keyframes shake {
+    0% { transform: translateX(50); }
+    25% { transform: translateX(-50px); }
+    50% { transform: translateX(50px); }
+    75% { transform: translateX(-50px); }
+    100% { transform: translateX(5); }
+}
