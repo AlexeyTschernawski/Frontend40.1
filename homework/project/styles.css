@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #645099;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+#suggestions {
+    position: absolute;
+    width: calc(100% - 40px);
+    background-color: #fff;
+    border: 0px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.suggestion {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.suggestion:hover {
+    background-color: #e7d8d8;
+}
+
+#weatherInfo {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #b0e4b0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    width: 100%;
+    height: 100vh; 
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-image: url('./img/miami.jpg'), url('./img/orlando.png'), url('./img/sea.jpg'), url('./img/sp.jpg'), url('./img/tampa.jpg');
+    background-size: 50%, 50%, 50%, 50%, 50%; 
+    background-position: top left, top right, bottom left, bottom right, center; /* Позиции фоновых изображений */
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+}
+

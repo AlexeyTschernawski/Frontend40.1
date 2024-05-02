@@ -2,6 +2,7 @@ const express = require('express');
 const multer = require('multer');
 const fs = require('fs');
 const path = require('path');
+import fetch from 'node-fetch';
 const fetch = require('node-fetch');
 
 const app = express();

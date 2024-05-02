@@ -7,9 +7,10 @@ document.addEventListener('DOMContentLoaded', function () {
         const seconds = Math.floor(milliseconds / 1000);
         const millisecondsRemainder = milliseconds % 1000;
 
-        const formattedMilliseconds = ("00" + millisecondsRemainder).slice(-3);
+        const formattedMilliseconds = ("00" + millisecondsRemainder).slice(-3); // форматируем миллисекунды
 
-        display.textContent = `${seconds}.${formattedMilliseconds}`; 
+        display.textContent = `${seconds}.${formattedMilliseconds}`; // отображаем секунды и миллисекунды
+        milliseconds -= 100;
 
         if (milliseconds < 0) {
             clearInterval(timer);
@@ -25,12 +26,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const shakeInterval = setInterval(function () {
             display.style.left = originalPosition + shakeDistance * shakeDirection + 'px';
-            shakeDirection *= 0-1;
-            shakeDistance *= 5; // 
+            shakeDirection *= -1;
+            shakeDistance *= 0.9; // замедляем тряску
 
             if (shakeDistance < 0.5) {
                 clearInterval(shakeInterval);
-                display.style.left = originalPosition + 'px';
+                display.style.left = originalPosition + 'px'; // возвращаем в исходное положение
             }
         }, 50);
     }
